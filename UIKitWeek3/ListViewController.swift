@@ -36,11 +36,11 @@ extension ListViewController:UICollectionViewDataSource{
     }
     
 }
-extension ListViewController:UICollectionViewDelegate{
-    
-}
+//extension ListViewController:UICollectionViewDelegate{
+//    
+//}
 extension ListViewController: UICollectionViewDelegateFlowLayout{
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: collectionView.bounds.width, height: 80)
+        return CGSize(width: collectionView.bounds.width, height: 60)
     }
 }

@@ -19,7 +19,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="86F-Ja-93e">
-                                <rect key="frame" x="0.0" y="59" width="393" height="759"/>
+                                <rect key="frame" x="0.0" y="159" width="393" height="659"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Pdu-Td-N3M">
                                     <size key="itemSize" width="393" height="113"/>
@@ -61,16 +61,39 @@
                                                     <color key="tintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <imageReference key="image" image="chevron.right" catalog="system" symbolScale="large"/>
                                                 </imageView>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ueo-PK-dRJ" userLabel="Divider">
+                                                    <rect key="frame" x="0.0" y="0.0" width="393" height="1"/>
+                                                    <viewLayoutGuide key="safeArea" id="jn6-Af-YDS"/>
+                                                    <color key="backgroundColor" red="0.91372549530000002" green="0.91764706370000004" blue="0.91764706370000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="1" id="oOI-Te-oRz"/>
+                                                    </constraints>
+                                                </view>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="s6l-9v-Tst" userLabel="Divider">
+                                                    <rect key="frame" x="0.0" y="79" width="393" height="1"/>
+                                                    <color key="backgroundColor" red="0.91372549530000002" green="0.91764706370000004" blue="0.91764706370000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="1" id="BF7-OS-PSp"/>
+                                                    </constraints>
+                                                </view>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="laQ-KY-x8y" firstAttribute="centerY" secondItem="tf6-qU-ViA" secondAttribute="centerY" id="4SD-6N-BDL"/>
                                                 <constraint firstItem="SIl-Cj-xv8" firstAttribute="centerY" secondItem="tf6-qU-ViA" secondAttribute="centerY" id="79L-3d-ZiK"/>
+                                                <constraint firstAttribute="bottom" secondItem="s6l-9v-Tst" secondAttribute="bottom" id="DSW-ol-uFH"/>
+                                                <constraint firstItem="ueo-PK-dRJ" firstAttribute="top" secondItem="tf6-qU-ViA" secondAttribute="top" id="Dna-R9-ufB"/>
                                                 <constraint firstItem="Uer-qf-IQ0" firstAttribute="leading" secondItem="tf6-qU-ViA" secondAttribute="leading" constant="20" id="M2V-7i-Yw9"/>
+                                                <constraint firstItem="ueo-PK-dRJ" firstAttribute="leading" secondItem="tf6-qU-ViA" secondAttribute="leading" id="QHx-Jm-8S5"/>
                                                 <constraint firstAttribute="trailing" secondItem="laQ-KY-x8y" secondAttribute="trailing" constant="10" id="TIg-wa-vcy"/>
                                                 <constraint firstItem="U2m-Gk-OPO" firstAttribute="centerY" secondItem="tf6-qU-ViA" secondAttribute="centerY" id="UlT-ry-qkt"/>
                                                 <constraint firstItem="Uer-qf-IQ0" firstAttribute="centerY" secondItem="tf6-qU-ViA" secondAttribute="centerY" id="X3S-ss-iZq"/>
+                                                <constraint firstAttribute="trailing" secondItem="s6l-9v-Tst" secondAttribute="trailing" id="bek-hM-msY"/>
                                                 <constraint firstItem="U2m-Gk-OPO" firstAttribute="leading" secondItem="Uer-qf-IQ0" secondAttribute="trailing" constant="10" id="e0d-nt-cuV"/>
+                                                <constraint firstAttribute="trailing" secondItem="ueo-PK-dRJ" secondAttribute="trailing" id="eB6-bL-L09"/>
                                                 <constraint firstItem="laQ-KY-x8y" firstAttribute="leading" secondItem="SIl-Cj-xv8" secondAttribute="trailing" constant="5" id="iLj-yG-iBQ"/>
+                                                <constraint firstItem="s6l-9v-Tst" firstAttribute="leading" secondItem="tf6-qU-ViA" secondAttribute="leading" id="kaz-7q-SGV"/>
                                             </constraints>
                                         </collectionViewCellContentView>
                                         <size key="customSize" width="393" height="80"/>
@@ -82,14 +105,22 @@
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Landmarks" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hCc-Bm-1Un">
+                                <rect key="frame" x="16" y="106" width="177" height="41"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="34"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="86F-Ja-93e" secondAttribute="trailing" id="AGZ-kp-whB"/>
                             <constraint firstItem="86F-Ja-93e" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="T53-qI-DGy"/>
+                            <constraint firstItem="hCc-Bm-1Un" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="47" id="XqZ-Y7-ROM"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="86F-Ja-93e" secondAttribute="bottom" id="bas-5q-rhg"/>
-                            <constraint firstItem="86F-Ja-93e" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="qr9-ya-G9W"/>
+                            <constraint firstItem="86F-Ja-93e" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="hHo-s1-Xbj"/>
+                            <constraint firstItem="hCc-Bm-1Un" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="oxk-aF-ZPd"/>
                         </constraints>
                     </view>
                     <connections>
