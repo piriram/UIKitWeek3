@@ -10,36 +10,46 @@ import UIKit
 class ListViewController: UIViewController {
     @IBOutlet weak var collectionView: UICollectionView!
     
-    let totallist:[ListModel] = ListModel.list
+    let totallist: [ListModel] = ListModel.list
+    let selectedList: [ListModel] = ListModel.selectedList
+    var option = false
+    
+    @IBOutlet weak var switchBtn: UISwitch!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         collectionView.dataSource = self
         collectionView.delegate = self
-        
+        switchBtn.addTarget(self, action: #selector(switchValueChanged), for: .valueChanged)
     }
     
-    
-    
+    @objc func switchValueChanged(_ sender: UISwitch) {
+        option = sender.isOn
+        collectionView.reloadData()
+    }
 }
-extension ListViewController:UICollectionViewDataSource{
+
+extension ListViewController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return totallist.count
+        return option ? selectedList.count : totallist.count
     }
+    
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ListCollectionViewCell", for: indexPath) as? ListCollectionViewCell else{
+        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ListCollectionViewCell", for: indexPath) as? ListCollectionViewCell else {
             return UICollectionViewCell()
         }
-        let list = totallist[indexPath.item]
+        let list = option ? selectedList[indexPath.item] : totallist[indexPath.item]
         cell.configure(list)
         return cell
     }
-    
 }
-//extension ListViewController:UICollectionViewDelegate{
-//    
+
+//extension ListViewController: UICollectionViewDelegate {
+//
 //}
-extension ListViewController: UICollectionViewDelegateFlowLayout{
+
+extension ListViewController: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         return CGSize(width: collectionView.bounds.width, height: 60)
     }
@@ -53,3 +63,4 @@ extension ListViewController: UICollectionViewDelegateFlowLayout{
         return 0
     }
 }
+

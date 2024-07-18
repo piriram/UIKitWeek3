@@ -28,4 +28,8 @@ extension ListModel {
         ListModel(name: "Chincoteague", imageName: "chincoteague", isFavorite: false),
         ListModel(name: "Lake Umbagog", imageName: "umbagog", isFavorite: false)
     ]
+    static let selectedList: [ListModel] = [
+        
+    ]
+    
 }
