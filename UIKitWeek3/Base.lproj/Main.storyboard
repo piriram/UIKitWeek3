@@ -62,7 +62,7 @@
                                                     <imageReference key="image" image="chevron.right" catalog="system" symbolScale="large"/>
                                                 </imageView>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ueo-PK-dRJ" userLabel="Divider">
-                                                    <rect key="frame" x="0.0" y="0.0" width="393" height="1"/>
+                                                    <rect key="frame" x="10" y="0.0" width="373" height="1"/>
                                                     <viewLayoutGuide key="safeArea" id="jn6-Af-YDS"/>
                                                     <color key="backgroundColor" red="0.91372549530000002" green="0.91764706370000004" blue="0.91764706370000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                     <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -76,12 +76,12 @@
                                                 <constraint firstItem="SIl-Cj-xv8" firstAttribute="centerY" secondItem="tf6-qU-ViA" secondAttribute="centerY" id="79L-3d-ZiK"/>
                                                 <constraint firstItem="ueo-PK-dRJ" firstAttribute="top" secondItem="tf6-qU-ViA" secondAttribute="top" id="Dna-R9-ufB"/>
                                                 <constraint firstItem="Uer-qf-IQ0" firstAttribute="leading" secondItem="tf6-qU-ViA" secondAttribute="leading" constant="20" id="M2V-7i-Yw9"/>
-                                                <constraint firstItem="ueo-PK-dRJ" firstAttribute="leading" secondItem="tf6-qU-ViA" secondAttribute="leading" id="QHx-Jm-8S5"/>
+                                                <constraint firstItem="ueo-PK-dRJ" firstAttribute="leading" secondItem="tf6-qU-ViA" secondAttribute="leading" constant="10" id="QHx-Jm-8S5"/>
                                                 <constraint firstAttribute="trailing" secondItem="laQ-KY-x8y" secondAttribute="trailing" constant="10" id="TIg-wa-vcy"/>
                                                 <constraint firstItem="U2m-Gk-OPO" firstAttribute="centerY" secondItem="tf6-qU-ViA" secondAttribute="centerY" id="UlT-ry-qkt"/>
                                                 <constraint firstItem="Uer-qf-IQ0" firstAttribute="centerY" secondItem="tf6-qU-ViA" secondAttribute="centerY" id="X3S-ss-iZq"/>
                                                 <constraint firstItem="U2m-Gk-OPO" firstAttribute="leading" secondItem="Uer-qf-IQ0" secondAttribute="trailing" constant="10" id="e0d-nt-cuV"/>
-                                                <constraint firstAttribute="trailing" secondItem="ueo-PK-dRJ" secondAttribute="trailing" id="eB6-bL-L09"/>
+                                                <constraint firstAttribute="trailing" secondItem="ueo-PK-dRJ" secondAttribute="trailing" constant="10" id="eB6-bL-L09"/>
                                                 <constraint firstItem="laQ-KY-x8y" firstAttribute="leading" secondItem="SIl-Cj-xv8" secondAttribute="trailing" constant="5" id="iLj-yG-iBQ"/>
                                             </constraints>
                                         </collectionViewCellContentView>
@@ -101,7 +101,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HjV-KY-NxS" userLabel="Divider">
-                                <rect key="frame" x="0.0" y="164" width="393" height="1"/>
+                                <rect key="frame" x="10" y="164" width="373" height="1"/>
                                 <viewLayoutGuide key="safeArea" id="1VZ-nv-71U"/>
                                 <color key="backgroundColor" red="0.91372549530000002" green="0.91764706370000004" blue="0.91764706370000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -127,10 +127,10 @@
                             <constraint firstItem="HjV-KY-NxS" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="105" id="4NC-Sv-f9w"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="86F-Ja-93e" secondAttribute="trailing" id="AGZ-kp-whB"/>
                             <constraint firstItem="86F-Ja-93e" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="T53-qI-DGy"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="HjV-KY-NxS" secondAttribute="trailing" id="Ub5-OY-mUk"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="HjV-KY-NxS" secondAttribute="trailing" constant="10" id="Ub5-OY-mUk"/>
                             <constraint firstItem="hCc-Bm-1Un" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="47" id="XqZ-Y7-ROM"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="86F-Ja-93e" secondAttribute="bottom" id="bas-5q-rhg"/>
-                            <constraint firstItem="HjV-KY-NxS" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="dmc-aO-cgG"/>
+                            <constraint firstItem="HjV-KY-NxS" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="dmc-aO-cgG"/>
                             <constraint firstItem="86F-Ja-93e" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="150" id="hHo-s1-Xbj"/>
                             <constraint firstItem="hCc-Bm-1Un" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="oxk-aF-ZPd"/>
                         </constraints>
